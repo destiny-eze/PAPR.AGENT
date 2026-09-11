@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4285F4;
+  --color-primary-hover: #3367D6;
+  --color-primary-light: #E8F0FE;
+  
+  --color-indigo-50: #E8F0FE;
+  --color-indigo-100: #D2E3FC;
+  --color-indigo-200: #AECBFA;
+  --color-indigo-300: #8AB4F8;
+  --color-indigo-400: #669DF6;
+  --color-indigo-500: #4285F4;
+  --color-indigo-600: #4285F4;
+  --color-indigo-700: #3367D6;
+  --color-indigo-800: #1A73E8;
+  --color-indigo-900: #174EA6;
+  --color-indigo-950: #155724;
+
+  --color-blue-50: #E8F0FE;
+  --color-blue-100: #D2E3FC;
+  --color-blue-200: #AECBFA;
+  --color-blue-500: #4285F4;
+  --color-blue-600: #4285F4;
+  --color-blue-700: #3367D6;
+
+  --color-zinc-100: #F8F9FA;
+  --color-zinc-200: #E8EAED;
+  --color-zinc-300: #DADCE0;
+  --color-zinc-400: #BDC1C6;
+  --color-zinc-500: #80868B;
+  --color-zinc-600: #5F6368;
+  --color-zinc-700: #3C4043;
+  --color-zinc-800: #202124;
+  --color-zinc-900: #202124;
+}
+
+@layer base {
+  :root {
+    --brand-primary: #4285F4;
+    --brand-primary-hover: #3367D6;
+    --brand-primary-light: #E8F0FE;
+    --brand-border: #E8EAED;
+    --brand-text: #202124;
+    --brand-text-secondary: #5F6368;
+    --brand-bg: #FFFFFF;
+    --brand-surface: #F8F9FA;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #202124;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  ::selection {
+    background-color: #E8F0FE;
+    color: #1967D2;
+  }
+}
+

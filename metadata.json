@@ -1,0 +1,7 @@
+{
+  "name": "Papr - Academic Research & Paper Writing Suite",
+  "description": "Research, made clear. An end-to-end academic writing workspace solving research barriers: topic formulation, literature synthesis, IMRaD move scaffolding, NNES style polishing, CRediT authorship, and peer review rebuttals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
