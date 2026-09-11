@@ -1,0 +1,153 @@
+import React from "react";
+
+interface PaprLogoProps {
+  className?: string;
+  variant?: "full" | "icon";
+  color?: string;
+}
+
+/**
+ * Official Papr Logo
+ * Rendered faithfully from the official brand identity.
+ * Features the signature folded-paper / speech-marker initial "p" and bold geometric letterforms.
+ */
+export const PaprLogo: React.FC<PaprLogoProps> = ({
+  className = "h-7 w-auto",
+  variant = "full",
+  color = "#041026"
+}) => {
+  if (variant === "icon") {
+    return <PaprIcon className={className} color={color} />;
+  }
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="15 35 1005 345"
+      fill="none"
+      className={className}
+      aria-label="Papr logo"
+      style={{ color }}
+    >
+      <g fill="currentColor">
+        {/* First "p": Origami / Folded Sheet Mark */}
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="
+            M 35 365
+            L 35 165
+            C 35 101.5 86.5 50 150 50
+            C 232 50 298 101.5 298 165
+            C 298 228.5 232 280 150 280
+            C 122 280 97 272 78 259
+            Z
+            M 108 108
+            L 206 108
+            L 206 226
+            Z
+          "
+        />
+
+        {/* "a": Geometric Single-Story */}
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="
+            M 320 165
+            C 320 101.5 366 50 433 50
+            C 463 50 493 61 513 78
+            L 513 50
+            L 563 50
+            L 563 280
+            L 513 280
+            L 513 252
+            C 493 269 463 280 433 280
+            C 366 280 320 228.5 320 165
+            Z
+            M 377 165
+            C 377 198 401 226 441 226
+            C 481 226 513 198 513 165
+            C 513 132 481 104 441 104
+            C 401 104 377 132 377 165
+            Z
+          "
+        />
+
+        {/* Second "p": Geometric Lowercase */}
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="
+            M 590 50
+            L 640 50
+            L 640 78
+            C 660 61 690 50 720 50
+            C 787 50 833 101.5 833 165
+            C 833 228.5 787 280 720 280
+            C 690 280 660 269 640 252
+            L 640 365
+            L 590 365
+            Z
+            M 640 165
+            C 640 198 667 226 707 226
+            C 747 226 776 198 776 165
+            C 776 132 747 104 707 104
+            C 667 104 640 132 640 165
+            Z
+          "
+        />
+
+        {/* "r": Geometric Terminal */}
+        <path
+          d="
+            M 860 50
+            L 910 50
+            L 910 106
+            C 927 70 959 50 997 50
+            L 997 108
+            C 951 108 910 138 910 192
+            L 910 280
+            L 860 280
+            Z
+          "
+        />
+      </g>
+    </svg>
+  );
+};
+
+export const PaprIcon: React.FC<{ className?: string; color?: string }> = ({
+  className = "w-7 h-7",
+  color = "#041026"
+}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="20 35 295 345"
+      fill="none"
+      className={className}
+      aria-label="Papr icon"
+      style={{ color }}
+    >
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="
+          M 35 365
+          L 35 165
+          C 35 101.5 86.5 50 150 50
+          C 232 50 298 101.5 298 165
+          C 298 228.5 232 280 150 280
+          C 122 280 97 272 78 259
+          Z
+          M 108 108
+          L 206 108
+          L 206 226
+          Z
+        "
+      />
+    </svg>
+  );
+};

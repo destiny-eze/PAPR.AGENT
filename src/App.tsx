@@ -24,6 +24,7 @@ import { StyleNNESStudioTab } from "./components/StyleNNESStudioTab";
 import { AuthorshipTab } from "./components/AuthorshipTab";
 import { RebuttalTab } from "./components/RebuttalTab";
 import { ExportModal } from "./components/ExportModal";
+import { PaprLogo, PaprIcon } from "./components/PaprLogo";
 
 type ActiveTab = 
   | "pipeline" 
@@ -302,6 +303,7 @@ export default function App() {
       <footer className="border-t border-[#E8EAED] bg-[#FFFFFF] py-4 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#5F6368] gap-2">
           <div className="flex items-center gap-2">
+            <PaprIcon className="w-3.5 h-3.5 text-[#041026]" />
             <span className="font-bold text-[#202124]">Papr</span>
             <span>&bull;</span>
             <span className="text-[#4285F4] font-medium">Research, made clear.</span>
@@ -326,8 +328,11 @@ export default function App() {
       {showNewPaperModal && (
         <div className="fixed inset-0 bg-black/40 backdrop-blur-xs flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-xl max-w-md w-full p-6 shadow-xl border border-[#E8EAED]">
-            <h3 className="font-bold text-base text-[#202124]">Start New Research Paper</h3>
-            <p className="text-xs text-[#5F6368] mt-0.5">Initialize a blank manuscript with personalized scaffolds.</p>
+            <div className="flex items-center gap-2 mb-1">
+              <PaprIcon className="w-5 h-5 text-[#041026]" />
+              <h3 className="font-bold text-base text-[#202124]">Start New Research Paper</h3>
+            </div>
+            <p className="text-xs text-[#5F6368]">Initialize a blank manuscript with personalized scaffolds.</p>
 
             <div className="space-y-4 mt-4 text-xs">
               <div>

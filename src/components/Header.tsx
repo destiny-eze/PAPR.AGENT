@@ -1,6 +1,5 @@
 import React from "react";
 import { 
-  FileText, 
   Sparkles, 
   Download, 
   Users, 
@@ -10,6 +9,7 @@ import {
 } from "lucide-react";
 import { ResearchProject, ResearcherPersona } from "../types";
 import { PERSONA_DEFINITIONS } from "../data/initialData";
+import { PaprLogo } from "./PaprLogo";
 
 interface HeaderProps {
   currentProject: ResearchProject;
@@ -36,18 +36,12 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center justify-between h-16">
           {/* Logo & Brand */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-[#4285F4] flex items-center justify-center text-white shadow-xs">
-              <FileText className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="font-bold text-xl tracking-tight text-[#202124]">Papr</span>
-                <span className="text-xs text-[#5F6368] font-normal hidden sm:inline-block">•</span>
-                <span className="text-xs font-medium text-[#4285F4] tracking-tight">
-                  Research, made clear.
-                </span>
-              </div>
-              <p className="text-[11px] text-[#5F6368] hidden sm:block">Academic Writing &amp; Scaffolding Suite</p>
+            <div className="flex items-center gap-2.5">
+              <PaprLogo className="h-8 w-auto text-[#041026]" />
+              <div className="h-5 w-[1px] bg-[#E8EAED] hidden sm:block" />
+              <span className="text-xs font-medium text-[#4285F4] tracking-tight hidden sm:inline-block">
+                Research, made clear.
+              </span>
             </div>
           </div>
 

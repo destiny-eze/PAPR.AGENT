@@ -11,6 +11,7 @@ import {
   Users
 } from "lucide-react";
 import { ResearchProject } from "../types";
+import { PaprIcon } from "./PaprLogo";
 
 interface ExportModalProps {
   project: ResearchProject;
@@ -149,10 +150,10 @@ ${project.manuscript.Discussion?.content || "Discussion content..."}
     <div className="fixed inset-0 bg-black/40 backdrop-blur-xs flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-xl max-w-3xl w-full p-6 shadow-xl border border-zinc-200 flex flex-col max-h-[90vh]">
         {/* Header */}
-        <div className="flex items-center justify-between pb-4 border-b border-zinc-100">
-          <div className="flex items-center gap-2">
-            <Download className="w-5 h-5 text-indigo-600" />
-            <h3 className="font-bold text-base text-zinc-900">Export Research Deliverables</h3>
+        <div className="flex items-center justify-between pb-4 border-b border-[#E8EAED]">
+          <div className="flex items-center gap-2.5">
+            <PaprIcon className="w-5 h-5 text-[#041026]" />
+            <h3 className="font-bold text-base text-[#202124]">Export Research Deliverables</h3>
           </div>
           <button
             onClick={onClose}

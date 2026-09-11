@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 35 295 345" width="100%" height="100%" fill="none">
+  <!-- Papr Official Icon -->
+  <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="
+    M 35 365
+    L 35 165
+    C 35 101.5 86.5 50 150 50
+    C 232 50 298 101.5 298 165
+    C 298 228.5 232 280 150 280
+    C 122 280 97 272 78 259
+    Z
+    M 108 108
+    L 206 108
+    L 206 226
+    Z
+  " />
+</svg>
